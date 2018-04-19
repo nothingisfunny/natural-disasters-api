@@ -1,5 +1,6 @@
 class Api::DisastersController < ApplicationController
   def index
-    render json: Disaster.all
+    render json: DisasterSerializer.new(Disaster.all).serialized_json
+
   end
 end
