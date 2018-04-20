@@ -16,24 +16,9 @@ ActiveRecord::Schema.define(version: 20180416221011) do
   enable_extension "plpgsql"
 
   create_table "disasters", force: :cascade do |t|
-    t.integer "disasterNumber"
-    t.integer "ihProgramDeclared"
-    t.integer "iaProgramDeclared"
-    t.integer "paProgramDeclared"
-    t.integer "hmProgramDeclared"
     t.string "state"
-    t.string "declarationDate"
     t.integer "fyDeclared"
-    t.string "disasterType"
     t.string "incidentType"
-    t.string "title"
-    t.string "incidentBeginDate"
-    t.string "incidentEndDate"
-    t.string "disasterCloseOutDate"
-    t.string "declaredCountyArea"
-    t.string "placeCode"
-    t.string "hashString"
-    t.string "lastRefresh"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
